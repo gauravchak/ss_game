@@ -16,7 +16,8 @@ def parse_args():
     current_dir = Path(__file__).parent
     
     parser = argparse.ArgumentParser(description='Offline RL experiment orchestration for Peg Solitaire.')
-    parser.add_argument('--data', default=str(current_dir / 'trajectories.json'), help='Path to the offline trajectory dataset.')
+    parser.add_argument('--human-data', default=str(current_dir / 'human_data.json'), help='Path to real human offline trajectories.')
+    parser.add_argument('--synthetic-data', default=str(current_dir / 'synthetic_data.json'), help='Path to synthetic generated offline trajectories.')
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--batch-size', type=int, default=32)
     parser.add_argument('--lr', type=float, default=1e-3)
@@ -36,20 +37,26 @@ def parse_args():
 
 
 def ensure_dataset(args):
-    data_path = Path(args.data)
-    if data_path.exists():
-        return True
-    if args.skip_fetch:
-        logging.error('Dataset %s missing and --skip-fetch enabled.', data_path)
-        return False
-    fetch_module.fetch_trajectories(output_file=args.data)
-    return data_path.exists()
+    human_path = Path(args.human_data)
+    synthetic_path = Path(args.synthetic_data)
+    
+    # We only auto-fetch the human data. Synthetic data is assumed to be pre-generated.
+    if not human_path.exists():
+        if args.skip_fetch:
+            logging.warning('Human dataset %s missing and --skip-fetch enabled.', human_path)
+        else:
+            fetch_module.fetch_trajectories(output_file=args.human_data)
+            
+    if not synthetic_path.exists():
+        logging.warning('Synthetic dataset %s missing. Training may be suboptimal without perfect examples. Run environment.py to generate.', synthetic_path)
+        
+    return human_path.exists() or synthetic_path.exists()
 
 
 def run_training(args):
     algorithm = train.Algorithm(args.algorithm)
     model = train.train_model(
-        data_path=args.data,
+        data_path=[args.human_data, args.synthetic_data],
         epochs=args.epochs,
         batch_size=args.batch_size,
         lr=args.lr,
@@ -72,8 +79,8 @@ def run_evaluation(args):
 
 
 def run_ope(args):
-    logging.info('Running off-policy evaluation against %s', args.model_path)
-    ope_module.evaluate_ope(trajectories_file=args.data, model_path=args.model_path, gamma=args.gamma)
+    logging.info('Running off-policy evaluation against real human data: %s', args.human_data)
+    ope_module.evaluate_ope(trajectories_file=args.human_data, model_path=args.model_path, gamma=args.gamma)
 
 
 def run_export(args):

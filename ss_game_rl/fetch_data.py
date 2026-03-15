@@ -6,7 +6,7 @@ from upstash_redis import Redis
 # Load environment variables from .env file or rely on system env vars
 load_dotenv()
 
-def fetch_trajectories(output_file="trajectories.json"):
+def fetch_trajectories(output_file="human_data.json"):
     url = os.environ.get("UPSTASH_REDIS_REST_URL")
     token = os.environ.get("UPSTASH_REDIS_REST_TOKEN")
 

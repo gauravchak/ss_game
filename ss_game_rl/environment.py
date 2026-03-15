@@ -207,7 +207,7 @@ if __name__ == "__main__":
     
     print("Generating synthetic trajectories...")
     samples = []
-    output_file = "trajectories.json"
+    output_file = "synthetic_data.json"
     
     if not os.path.exists(output_file):
         with open(output_file, 'w') as f:

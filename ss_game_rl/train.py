@@ -24,7 +24,7 @@ class Algorithm(Enum):
 class PegSolitaireDataset(Dataset):
     def __init__(
         self,
-        trajectories_file,
+        trajectories_files,
         gamma=0.99,
         win_reward=100.0,
         loss_penalty_multiplier=2.0,
@@ -36,12 +36,16 @@ class PegSolitaireDataset(Dataset):
         self.loss_penalty_multiplier = loss_penalty_multiplier
         self.step_penalty = step_penalty
 
-        if not os.path.exists(trajectories_file):
-            logging.warning('%s not found - run fetch_data.py first', trajectories_file)
-            return
+        if isinstance(trajectories_files, str):
+            trajectories_files = [trajectories_files]
 
-        with open(trajectories_file, 'r') as f:
-            data = json.load(f)
+        data = []
+        for file_path in trajectories_files:
+            if not os.path.exists(file_path):
+                logging.warning('%s not found - skipping', file_path)
+                continue
+            with open(file_path, 'r') as f:
+                data.extend(json.load(f))
 
         for game in data:
             outcome = game.get('outcome', 32)
@@ -163,7 +167,7 @@ def train_model(
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train the Peg Solitaire policy off-policy.')
-    parser.add_argument('--data', default='trajectories.json')
+    parser.add_argument('--data', nargs='+', default=['human_data.json', 'synthetic_data.json'])
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--batch-size', type=int, default=32)
     parser.add_argument('--lr', type=float, default=1e-3)
