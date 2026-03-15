@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { saveTrajectoryAction, TrajectoryEntry } from '@/app/actions';
+import { getHintFromONNX } from '@/lib/onnxInference';
 
 type Position = { r: number; c: number };
 type CellType = 'O' | '.' | ' ';
@@ -45,28 +46,47 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
     setHintMessage(null);
   }, [board, selected]);
 
-  const requestHint = async () => {
-    if (gameOver || hintLoading) return;
+  const handleGetHint = async () => {
     setHintLoading(true);
     setHintMessage(null);
     setHintMove(null);
 
     try {
-      const res = await fetch('/api/hint', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ board })
-      });
-      const data = await res.json();
-      
-      if (data.hint) {
-        setHintMove(data.hint);
-        if (data.message) setHintMessage(data.message);
-      } else {
-        setHintMessage(data.message || "No hint available.");
+      // 1. Convert board to compact string format
+      let boardStr = "";
+      for (let r=0; r<7; r++) {
+          for (let c=0; c<7; c++) {
+              boardStr += board[r][c];
+          }
       }
-    } catch (err) {
-      setHintMessage("Failed to connect to hint engine.");
+
+      // 2. Call Local Browser ML Inference (Zero-Cost, Instantaneous!)
+      const startTime = performance.now();
+      const action = await getHintFromONNX(boardStr);
+      const endTime = performance.now();
+
+      if (action) {
+        // action is {r, c, d} where d is 0=Right, 1=Down, 2=Left, 3=Up
+        const DIRS = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+        const dr = DIRS[action.d][0];
+        const dc = DIRS[action.d][1];
+        
+        const move: Move = {
+            r1: action.r,
+            c1: action.c,
+            r2: action.r + 2*dr,
+            c2: action.c + 2*dc
+        };
+        
+        setHintMove(move);
+        const ms = (endTime - startTime).toFixed(0);
+        setHintMessage(`AI predicted best move in ${ms}ms ✨`);
+      } else {
+        setHintMessage("ML Model couldn't find a valid move.");
+      }
+    } catch (error) {
+      console.error("Failed to get ML hint:", error);
+      setHintMessage("Failed to load Neural Network.");
     } finally {
       setHintLoading(false);
     }
@@ -251,17 +271,14 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
       
       {/* Hint Controls */}
       <div className="w-full flex justify-between items-center mb-6 h-10">
-        <button
-          onClick={requestHint}
-          disabled={gameOver || hintLoading || marblesRemaining <= 1}
-          className="text-sm px-4 py-2 border border-[var(--gold-primary)] text-[var(--gold-primary)] hover:bg-[var(--gold-primary)] hover:text-black transition-colors rounded uppercase tracking-widest font-semibold disabled:opacity-30 disabled:cursor-not-allowed flex items-center gap-2"
-        >
-          {hintLoading ? (
-            <><span className="animate-spin inline-block w-4 h-4 border-2 border-current border-t-transparent rounded-full"></span> Thinking...</>
-          ) : (
-            '💡 Get Hint'
-          )}
-        </button>
+            <button
+                onClick={handleGetHint}
+                disabled={gameOver || hintLoading}
+                className={`flex items-center space-x-2 px-6 py-2 rounded-full border border-[--gold-primary] text-[--gold-primary] transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.1)] 
+                           ${gameOver ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[--gold-primary] hover:text-[#111111] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]'}`}
+            >
+                <span>{hintLoading ? '🧠 Thinking...' : '💡 Get AI Hint'}</span>
+            </button>
         {hintMessage && (
           <div className="text-xs text-amber-500 animate-in fade-in max-w-[200px] text-right">
             {hintMessage}
