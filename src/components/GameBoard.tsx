@@ -66,8 +66,8 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
       const endTime = performance.now();
 
       if (action) {
-        // action is {r, c, d} where d is 0=Right, 1=Down, 2=Left, 3=Up
-        const DIRS = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+        // action is {r, c, d} where d is 0=Up, 1=Right, 2=Down, 3=Left
+        const DIRS = [[-1, 0], [0, 1], [1, 0], [0, -1]];
         const dr = DIRS[action.d][0];
         const dc = DIRS[action.d][1];
         
@@ -326,7 +326,7 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
                     />
                   )}
                   {(isValidMove || isHintDest) && !isMarble && (
-                   <div className={`w-3 h-3 rounded-full ${isHintDest ? 'bg-blue-500 animate-ping' : 'bg-[var(--gold-primary)] opacity-50'}`} />
+                   <div className={`w-3 h-3 rounded-full ${isHintDest ? 'w-4 h-4 bg-blue-500 animate-ping opacity-100 ring-2 ring-blue-300' : 'bg-[var(--gold-primary)] opacity-50'}`} />
                   )}
                 </div>
               );
