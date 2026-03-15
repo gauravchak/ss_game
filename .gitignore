@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+ss_game_rl/.env
+ss_game_rl/venv/
+ss_game_rl/__pycache__/
+ss_game_rl/trajectories.json
+ss_game_rl/*.pth
