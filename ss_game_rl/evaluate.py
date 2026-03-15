@@ -1,6 +1,7 @@
 import torch
-from train import PolicyNetwork, board_to_tensor
-from environment import PegSolitaireEnv
+
+from ss_game_rl.environment import PegSolitaireEnv
+from ss_game_rl.train import PolicyNetwork, board_to_tensor
 
 def evaluate_model(model_path="peg_solitaire_policy.pth", num_games=100):
     env = PegSolitaireEnv()

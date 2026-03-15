@@ -1,9 +1,11 @@
 import json
 import os
+
 import torch
 import numpy as np
-from train import PolicyNetwork, board_to_tensor
-from environment import PegSolitaireEnv
+
+from ss_game_rl.environment import PegSolitaireEnv
+from ss_game_rl.train import PolicyNetwork, board_to_tensor
 
 def evaluate_ope(trajectories_file="trajectories.json", model_path="peg_solitaire_policy.pth", gamma=0.99):
     """

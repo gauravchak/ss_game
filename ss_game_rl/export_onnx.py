@@ -1,6 +1,8 @@
-import torch
 import os
-from train import PolicyNetwork
+
+import torch
+
+from ss_game_rl.train import PolicyNetwork
 
 def export_to_onnx(model_path="peg_solitaire_policy.pth", output_path="../public/peg_solitaire_policy.onnx"):
     """
