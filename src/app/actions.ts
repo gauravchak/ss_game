@@ -1,6 +1,10 @@
 'use server';
 
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
+
+// Initialize the Redis client. 
+// When deployed to Vercel and linked with Upstash Redis, these env vars are auto-populated.
+const redis = Redis.fromEnv();
 
 export interface ScoreEntry {
   id: string; // KV doesn't auto-increment easily, we'll use a timestamp-based ID
@@ -20,11 +24,8 @@ export async function submitScoreAction(playerName: string, marblesRemaining: nu
       created_at: new Date().toISOString(),
     };
 
-    // Vercel KV is fundamentally Redis. We'll store the leaderboard as a JSON array for simplicity
-    // in this small-scale app.
-    
     // 1. Fetch current leaderboard
-    let currentLeaderboard = await kv.get<ScoreEntry[]>(LEADERBOARD_KEY) || [];
+    let currentLeaderboard = await redis.get<ScoreEntry[]>(LEADERBOARD_KEY) || [];
     
     // 2. Add new score
     currentLeaderboard.push(newEntry);
@@ -41,21 +42,21 @@ export async function submitScoreAction(playerName: string, marblesRemaining: nu
     currentLeaderboard = currentLeaderboard.slice(0, 10);
     
     // 5. Save back to KV
-    await kv.set(LEADERBOARD_KEY, currentLeaderboard);
+    await redis.set(LEADERBOARD_KEY, currentLeaderboard);
     
     return { success: true };
   } catch (error) {
-    console.error('Failed to submit score to KV:', error);
+    console.error('Failed to submit score to Redis:', error);
     return { success: false, error: 'Failed to submit score' };
   }
 }
 
 export async function getLeaderboardAction(): Promise<ScoreEntry[]> {
   try {
-    const data = await kv.get<ScoreEntry[]>(LEADERBOARD_KEY);
+    const data = await redis.get<ScoreEntry[]>(LEADERBOARD_KEY);
     return data || [];
   } catch (error) {
-    console.error('Failed to fetch leaderboard from KV:', error);
+    console.error('Failed to fetch leaderboard from Redis:', error);
     return [];
   }
 }
