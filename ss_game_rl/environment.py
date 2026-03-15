@@ -8,7 +8,7 @@ class PegSolitaireEnv:
     States are represented as 49-character strings (like Vercel) or NumPy arrays.
     Actions are (row, col, direction).
     """
-    DIRS = [(0, 1), (1, 0), (0, -1), (-1, 0)] # Right, Down, Left, Up
+    DIRS = [(-1, 0), (0, 1), (1, 0), (0, -1)] # Up, Right, Down, Left
 
     def __init__(self):
         self.reset()
@@ -207,36 +207,43 @@ if __name__ == "__main__":
     
     print("Generating synthetic trajectories...")
     samples = []
+    output_file = "trajectories.json"
+    
+    if not os.path.exists(output_file):
+        with open(output_file, 'w') as f:
+            json.dump([], f)
     
     # Generate perfect games using randomized rollouts + DFS solvers
     print("Generating perfect wins via DFS (this will take 1-2 minutes)...")
-    wins_needed = 20
+    wins_needed = 5  # Reduced to finish faster
     attempts = 0
-    while len(samples) < wins_needed:
+    wins_found = 0
+    while wins_found < wins_needed:
         attempts += 1
         traj = generate_perfect_trajectory()
         if traj and traj['outcome'] == 1:
-            samples.append(traj)
-            print(f"  Found perfect game! ({len(samples)}/{wins_needed}) in {attempts} random DFS rollouts.")
+            wins_found += 1
+            print(f"  Found perfect game! ({wins_found}/{wins_needed}) in {attempts} random DFS rollouts.")
             attempts = 0 # reset
+            
+            with open(output_file, 'r') as f:
+                existing = json.load(f)
+            existing.append(traj)
+            with open(output_file, 'w') as f:
+                json.dump(existing, f, indent=2)
             
     # Generate random losing games to teach the network what NOT to do
     print("Generating 80 random losing games...")
-    for _ in range(80):
-        samples.append(generate_random_trajectory())
+    for i in range(80):
+        traj = generate_random_trajectory()
         
-    output_file = "synthetic_data.json"
-    
-    # If trajectories.json exists, we append to it.
-    if os.path.exists("trajectories.json"):
-        with open("trajectories.json", "r") as f:
+        with open(output_file, 'r') as f:
             existing = json.load(f)
-        total_samples = existing + samples
-        output_file = "trajectories.json"
-    else:
-        total_samples = samples
+        existing.append(traj)
+        with open(output_file, 'w') as f:
+            json.dump(existing, f, indent=2)
+            
+        if (i+1) % 10 == 0:
+            print(f"  Saved {i+1}/80 random games...")
         
-    with open(output_file, 'w') as f:
-        json.dump(total_samples, f, indent=2)
-        
-    print(f"Saved {len(total_samples)} total trajectories to {output_file}")
+    print(f"Done generating synthetic games.")

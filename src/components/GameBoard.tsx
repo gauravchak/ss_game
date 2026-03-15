@@ -321,7 +321,8 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
                       `}
                       style={{
                         background: isSelected ? 'var(--marble-selected)' : 'var(--marble-bg)',
-                        boxShadow: 'var(--marble-shadow)'
+                        // Remove inline boxShadow so Tailwind ring/shadow classes work!
+                        boxShadow: (isSelected && !isHintOrigin) ? 'var(--marble-shadow-selected, 0 4px 12px rgba(212,175,55,0.4))' : (isHintOrigin ? 'none' : 'var(--marble-shadow)')
                       }}
                     />
                   )}
