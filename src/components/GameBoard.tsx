@@ -80,7 +80,7 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
         
         setHintMove(move);
         const ms = (endTime - startTime).toFixed(0);
-        setHintMessage(`AI predicted best move in ${ms}ms ✨`);
+        setHintMessage(`Move the blue peg to the blue target! (${ms}ms)`);
       } else {
         setHintMessage("ML Model couldn't find a valid move.");
       }
@@ -308,16 +308,16 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
                     transition-all duration-300 relative
                     ${isBlocked ? 'invisible' : 'bg-[#1a1a1a] shadow-inner cursor-pointer'}
                     ${!isBlocked && !isMarble ? 'hover:bg-[#2a2a2a]' : ''}
-                    ${isValidMove || isHintDest ? 'ring-2 ring-[var(--gold-primary)] bg-[#2a2a2a]' : ''}
-                    ${isHintDest ? 'animate-pulse' : ''}
+                    ${isValidMove && !isHintDest ? 'ring-2 ring-[var(--gold-primary)] bg-[#2a2a2a]' : ''}
+                    ${isHintDest ? 'ring-2 ring-blue-500 bg-blue-500/10 shadow-[0_0_15px_rgba(59,130,246,0.5)]' : ''}
                   `}
                 >
                   {isMarble && (
                     <div
                       className={`
                         w-8 h-8 sm:w-11 sm:h-11 rounded-full marble-enter
-                        ${isSelected ? 'selected-glow' : ''}
-                        ${isHintOrigin ? 'ring-4 ring-blue-500 ring-offset-2 ring-offset-[#1a1a1a] animate-pulse' : ''}
+                        ${isSelected && !isHintOrigin ? 'selected-glow' : ''}
+                        ${isHintOrigin ? 'ring-4 ring-blue-500 ring-offset-2 ring-offset-[#1a1a1a] shadow-[0_0_20px_rgba(59,130,246,0.8)] animate-pulse' : ''}
                       `}
                       style={{
                         background: isSelected ? 'var(--marble-selected)' : 'var(--marble-bg)',
