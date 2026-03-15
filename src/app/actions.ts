@@ -53,10 +53,45 @@ export async function submitScoreAction(playerName: string, marblesRemaining: nu
 
 export async function getLeaderboardAction(): Promise<ScoreEntry[]> {
   try {
-    const data = await redis.get<ScoreEntry[]>(LEADERBOARD_KEY);
+    const data = await redis?.get<ScoreEntry[]>(LEADERBOARD_KEY);
     return data || [];
   } catch (error) {
     console.error('Failed to fetch leaderboard from Redis:', error);
     return [];
+  }
+}
+
+// --- RL Data Collection ---
+export interface TrajectoryEntry {
+  id: string;
+  outcome: number; // marbles remaining
+  timestamp: string;
+  moves: {
+    state: string; // 49-char compact string representation of the board
+    action: { row: number; col: number; dir: number }; // RL optimized action space
+  }[];
+}
+
+export async function saveTrajectoryAction(outcome: number, moves: TrajectoryEntry['moves']) {
+  if (!redis) return { success: false, error: 'Redis client not configured' };
+  
+  // We only want to save games that actually had moves, 
+  // ignoring if someone loaded the page and immediately quit/won somehow.
+  if (moves.length === 0) return { success: false, error: 'No moves to save' };
+
+  try {
+    const trajectory: TrajectoryEntry = {
+      id: Date.now().toString() + '_' + Math.random().toString(36).substr(2, 5),
+      outcome,
+      timestamp: new Date().toISOString(),
+      moves
+    };
+
+    // Push raw trajectory to the right end of a Redis List
+    await redis.rpush('rl:trajectories', JSON.stringify(trajectory));
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to save trajectory to Redis:', error);
+    return { success: false, error: 'Failed to save trajectory' };
   }
 }

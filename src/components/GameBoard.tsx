@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
+import { saveTrajectoryAction, TrajectoryEntry } from '@/app/actions';
 
 type Position = { r: number; c: number };
 type CellType = 'O' | '.' | ' ';
@@ -34,6 +35,9 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
   const [hintLoading, setHintLoading] = useState(false);
   const [hintMove, setHintMove] = useState<Move | null>(null);
   const [hintMessage, setHintMessage] = useState<string | null>(null);
+  
+  // RL Data Collection
+  const [trajectory, setTrajectory] = useState<TrajectoryEntry['moves']>([]);
 
   // Clear hint when user interacts
   useEffect(() => {
@@ -92,7 +96,7 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
   };
 
   // Check if game is over (no valid moves left)
-  const checkGameOver = (currentBoard: BoardState) => {
+  const checkGameOver = async (currentBoard: BoardState) => {
     let marblesCount = 0;
     let hasMoves = false;
 
@@ -117,6 +121,11 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
         triggerConfetti();
       }
       onGameEnd(marblesCount);
+      
+      // Submit RL Data in the background
+      saveTrajectoryAction(marblesCount, trajectory).catch(err => {
+        console.error("Failed to silently upload trajectory", err);
+      });
     }
   };
 
@@ -173,6 +182,27 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
         newBoard[midR][midC] = '.';
         newBoard[r][c] = 'O';
 
+        // RL Formatting: Determine Direction (0: Up, 1: Right, 2: Down, 3: Left)
+        let dir = -1;
+        if (r < selected.r) dir = 0; // Up
+        else if (c > selected.c) dir = 1; // Right
+        else if (r > selected.r) dir = 2; // Down
+        else if (c < selected.c) dir = 3; // Left
+
+        // Convert board to compact string
+        let stateStr = "";
+        for (let br=0; br<7; br++) {
+            for (let bc=0; bc<7; bc++) {
+                stateStr += board[br][bc];
+            }
+        }
+
+        const moveRecord = {
+            state: stateStr,
+            action: { row: selected.r, col: selected.c, dir }
+        };
+
+        setTrajectory(prev => [...prev, moveRecord]);
         setBoard(newBoard);
         setSelected(null);
         setValidMoves([]);
@@ -201,6 +231,7 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
     setMarblesRemaining(32);
     setHintMove(null);
     setHintMessage(null);
+    setTrajectory([]);
   };
 
   return (
