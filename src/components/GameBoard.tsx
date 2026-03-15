@@ -6,6 +6,7 @@ import confetti from 'canvas-confetti';
 type Position = { r: number; c: number };
 type CellType = 'O' | '.' | ' ';
 type BoardState = CellType[][];
+type Move = { r1: number; c1: number; r2: number; c2: number };
 
 const INITIAL_BOARD: BoardState = [
   [' ', ' ', 'O', 'O', 'O', ' ', ' '],
@@ -28,6 +29,44 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
   const [gameOver, setGameOver] = useState(false);
   const [win, setWin] = useState(false);
   const [validMoves, setValidMoves] = useState<Position[]>([]);
+  
+  // Hint State
+  const [hintLoading, setHintLoading] = useState(false);
+  const [hintMove, setHintMove] = useState<Move | null>(null);
+  const [hintMessage, setHintMessage] = useState<string | null>(null);
+
+  // Clear hint when user interacts
+  useEffect(() => {
+    setHintMove(null);
+    setHintMessage(null);
+  }, [board, selected]);
+
+  const requestHint = async () => {
+    if (gameOver || hintLoading) return;
+    setHintLoading(true);
+    setHintMessage(null);
+    setHintMove(null);
+
+    try {
+      const res = await fetch('/api/hint', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ board })
+      });
+      const data = await res.json();
+      
+      if (data.hint) {
+        setHintMove(data.hint);
+        if (data.message) setHintMessage(data.message);
+      } else {
+        setHintMessage(data.message || "No hint available.");
+      }
+    } catch (err) {
+      setHintMessage("Failed to connect to hint engine.");
+    } finally {
+      setHintLoading(false);
+    }
+  };
 
   // Calculate available moves for a specific pos
   const getValidMovesForMarble = (r: number, c: number, currentBoard: BoardState): Position[] => {
@@ -160,11 +199,13 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
     setGameOver(false);
     setWin(false);
     setMarblesRemaining(32);
+    setHintMove(null);
+    setHintMessage(null);
   };
 
   return (
     <div className="flex flex-col items-center justify-center p-8 w-full max-w-2xl mx-auto">
-      <div className="mb-8 text-center flex justify-between w-full items-end">
+      <div className="mb-4 text-center flex justify-between w-full items-end">
         <div>
           <h2 className="text-xl font-light text-[var(--gold-secondary)] uppercase tracking-widest mb-1">Status</h2>
           <div className="text-3xl font-semibold">
@@ -176,6 +217,26 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
           <div className="text-4xl font-bold font-mono text-[var(--gold-primary)]">{marblesRemaining}</div>
         </div>
       </div>
+      
+      {/* Hint Controls */}
+      <div className="w-full flex justify-between items-center mb-6 h-10">
+        <button
+          onClick={requestHint}
+          disabled={gameOver || hintLoading || marblesRemaining <= 1}
+          className="text-sm px-4 py-2 border border-[var(--gold-primary)] text-[var(--gold-primary)] hover:bg-[var(--gold-primary)] hover:text-black transition-colors rounded uppercase tracking-widest font-semibold disabled:opacity-30 disabled:cursor-not-allowed flex items-center gap-2"
+        >
+          {hintLoading ? (
+            <><span className="animate-spin inline-block w-4 h-4 border-2 border-current border-t-transparent rounded-full"></span> Thinking...</>
+          ) : (
+            '💡 Get Hint'
+          )}
+        </button>
+        {hintMessage && (
+          <div className="text-xs text-amber-500 animate-in fade-in max-w-[200px] text-right">
+            {hintMessage}
+          </div>
+        )}
+      </div>
 
       <div className="inline-block p-4 bg-[var(--cell-bg)] rounded-xl border border-[var(--cell-border)] shadow-2xl relative">
         {board.map((row, r) => (
@@ -185,6 +246,10 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
               const isMarble = cell === 'O';
               const isSelected = selected && selected.r === r && selected.c === c;
               const isValidMove = validMoves.some(m => m.r === r && m.c === c);
+              
+              // Hint highlighting
+              const isHintOrigin = hintMove && hintMove.r1 === r && hintMove.c1 === c;
+              const isHintDest = hintMove && hintMove.r2 === r && hintMove.c2 === c;
 
               return (
                 <div
@@ -192,10 +257,11 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
                   onClick={() => handleClick(r, c)}
                   className={`
                     w-10 h-10 sm:w-14 sm:h-14 m-1 sm:m-1.5 rounded-full flex items-center justify-center
-                    transition-all duration-300
+                    transition-all duration-300 relative
                     ${isBlocked ? 'invisible' : 'bg-[#1a1a1a] shadow-inner cursor-pointer'}
                     ${!isBlocked && !isMarble ? 'hover:bg-[#2a2a2a]' : ''}
-                    ${isValidMove ? 'ring-2 ring-[var(--gold-primary)] bg-[#2a2a2a]' : ''}
+                    ${isValidMove || isHintDest ? 'ring-2 ring-[var(--gold-primary)] bg-[#2a2a2a]' : ''}
+                    ${isHintDest ? 'animate-pulse' : ''}
                   `}
                 >
                   {isMarble && (
@@ -203,6 +269,7 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
                       className={`
                         w-8 h-8 sm:w-11 sm:h-11 rounded-full marble-enter
                         ${isSelected ? 'selected-glow' : ''}
+                        ${isHintOrigin ? 'ring-4 ring-blue-500 ring-offset-2 ring-offset-[#1a1a1a] animate-pulse' : ''}
                       `}
                       style={{
                         background: isSelected ? 'var(--marble-selected)' : 'var(--marble-bg)',
@@ -210,8 +277,8 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
                       }}
                     />
                   )}
-                  {isValidMove && !isMarble && (
-                   <div className="w-3 h-3 rounded-full bg-[var(--gold-primary)] opacity-50" />
+                  {(isValidMove || isHintDest) && !isMarble && (
+                   <div className={`w-3 h-3 rounded-full ${isHintDest ? 'bg-blue-500 animate-ping' : 'bg-[var(--gold-primary)] opacity-50'}`} />
                   )}
                 </div>
               );
@@ -219,7 +286,7 @@ export default function GameBoard({ onGameEnd }: GameBoardProps) {
           </div>
         ))}
         {gameOver && (
-          <div className="absolute inset-0 bg-black/70 rounded-xl flex items-center justify-center flex-col animate-in fade-in duration-500 backdrop-blur-sm z-10">
+          <div className="absolute inset-0 bg-black/80 rounded-xl flex items-center justify-center flex-col animate-in fade-in duration-500 backdrop-blur-sm z-10">
              <div className={`text-4xl font-bold mb-4 ${win ? 'text-[var(--gold-primary)]' : 'text-gray-300'}`}>
                {win ? 'Perfect Score!' : 'No More Moves'}
              </div>
