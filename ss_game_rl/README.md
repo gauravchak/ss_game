@@ -55,3 +55,13 @@ python train.py
 ```
 
 This will produce a `peg_solitaire_policy.pth` weight file containing your trained model.
+
+### 5. Experiment Orchestrator
+
+Automation is now provided by `run_experiment.py`, which sequentially fetches the latest trajectories, trains the policy, evaluates it, runs the off-policy estimator, and exports the ONNX hint model.
+
+```bash
+python -m ss_game_rl.run_experiment
+```
+
+Control the workflow with flags such as `--epochs`, `--algorithm reinforce`, `--eval-games`, `--skip-export`, and `--onnx-path`. The default `--onnx-path` targets `../public/peg_solitaire_policy.onnx`, keeping the Vercel hint in sync with whichever policy you train.

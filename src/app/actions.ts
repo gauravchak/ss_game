@@ -19,13 +19,13 @@ export async function submitScoreAction(playerName: string, marblesRemaining: nu
   try {
     const newEntry: ScoreEntry = {
       id: Date.now().toString(),
-      player_name: playerName.slice(0, 20), // Protect against massive string inputs
+      player_name: playerName.slice(0, 20).trim(), // Protect against massive string inputs
       marbles_remaining: marblesRemaining,
       created_at: new Date().toISOString(),
     };
 
     // 1. Fetch current leaderboard
-    let currentLeaderboard = await redis.get<ScoreEntry[]>(LEADERBOARD_KEY) || [];
+    let currentLeaderboard = await redis?.get<ScoreEntry[]>(LEADERBOARD_KEY) || [];
     
     // 2. Add new score
     currentLeaderboard.push(newEntry);
@@ -38,11 +38,11 @@ export async function submitScoreAction(playerName: string, marblesRemaining: nu
       return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
     });
     
-    // 4. Keep only top 10 to save space
-    currentLeaderboard = currentLeaderboard.slice(0, 10);
+    // 4. Keep top 100 to save space but allow for client-side aggregation
+    currentLeaderboard = currentLeaderboard.slice(0, 100);
     
     // 5. Save back to KV
-    await redis.set(LEADERBOARD_KEY, currentLeaderboard);
+    await redis?.set(LEADERBOARD_KEY, currentLeaderboard);
     
     return { success: true };
   } catch (error) {

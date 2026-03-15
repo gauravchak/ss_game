@@ -68,7 +68,7 @@ export async function getHintFromONNX(boardStr: string): Promise<{r: number, c: 
 // Helper to calculate exact legal moves so the Neural Network doesn't break the rules
 function getLegalMoves(boardStr: string) {
     const moves: {r: number, c: number, d: number}[] = [];
-    const DIRS = [[0, 1], [1, 0], [0, -1], [-1, 0]]; // Right, Down, Left, Up
+    const DIRS = [[-1, 0], [0, 1], [1, 0], [0, -1]]; // 0: Up, 1: Right, 2: Down, 3: Left
     
     // boardStr is 49 chars flat
     const getCell = (r: number, c: number) => {

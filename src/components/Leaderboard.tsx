@@ -8,8 +8,15 @@ interface LeaderboardProps {
   onScoreSubmitted: () => void;
 }
 
+interface PlayerStats {
+  player_name: string;
+  min_marbles: number;
+  avg_marbles: number;
+  games_played: number;
+}
+
 export default function Leaderboard({ currentScore, onScoreSubmitted }: LeaderboardProps) {
-  const [topScores, setTopScores] = useState<ScoreEntry[]>([]);
+  const [topScores, setTopScores] = useState<PlayerStats[]>([]);
   const [loading, setLoading] = useState(true);
   const [playerName, setPlayerName] = useState('');
   const [submitting, setSubmitting] = useState(false);
@@ -23,13 +30,54 @@ export default function Leaderboard({ currentScore, onScoreSubmitted }: Leaderbo
     setLoading(true);
     try {
       const data = await getLeaderboardAction();
-      setTopScores(data || []);
+      
+      if (!data || data.length === 0) {
+        setTopScores([]);
+        return;
+      }
+
+      // Aggregate raw games into PlayerStats client-side
+      const statsMap = new Map<string, PlayerStats>();
+
+      data.forEach((entry) => {
+        const nameKey = entry.player_name.toLowerCase();
+        const stat = statsMap.get(nameKey);
+        
+        if (stat) {
+          stat.min_marbles = Math.min(stat.min_marbles, entry.marbles_remaining);
+          stat.avg_marbles += entry.marbles_remaining; // Sum for now
+          stat.games_played += 1;
+          stat.player_name = entry.player_name; // Keep most recent capitalization
+        } else {
+          statsMap.set(nameKey, {
+            player_name: entry.player_name,
+            min_marbles: entry.marbles_remaining,
+            avg_marbles: entry.marbles_remaining,
+            games_played: 1,
+          });
+        }
+      });
+
+      // Compute true averages and convert to array
+      const aggregated = Array.from(statsMap.values()).map(stat => {
+        stat.avg_marbles = Number((stat.avg_marbles / stat.games_played).toFixed(2));
+        return stat;
+      });
+
+      // Sort: Best minimum first, lowest average tiebreaker, most games tiebreaker
+      aggregated.sort((a, b) => {
+        if (a.min_marbles !== b.min_marbles) return a.min_marbles - b.min_marbles;
+        if (a.avg_marbles !== b.avg_marbles) return a.avg_marbles - b.avg_marbles;
+        return b.games_played - a.games_played;
+      });
+
+      setTopScores(aggregated.slice(0, 50));
     } catch (error) {
       console.error('Error fetching leaderboard', error);
       // Fallback data if KV isn't linked yet
       setTopScores([
-        { id: '1', player_name: 'PegMaster', marbles_remaining: 1, created_at: new Date().toISOString() },
-        { id: '2', player_name: 'MarbleKing', marbles_remaining: 2, created_at: new Date().toISOString() },
+        { player_name: 'PegMaster', min_marbles: 1, avg_marbles: 1.5, games_played: 12 },
+        { player_name: 'MarbleKing', min_marbles: 2, avg_marbles: 4.2, games_played: 5 },
       ]);
     } finally {
       setLoading(false);
@@ -101,7 +149,9 @@ export default function Leaderboard({ currentScore, onScoreSubmitted }: Leaderbo
       <div className="space-y-2">
         <div className="flex justify-between text-xs text-gray-500 uppercase font-semibold mb-3 px-2">
           <span>Rank & Player</span>
-          <span>Remaining</span>
+          <div className="text-right">
+            <span>Best</span>
+          </div>
         </div>
         
         {loading ? (
@@ -111,7 +161,7 @@ export default function Leaderboard({ currentScore, onScoreSubmitted }: Leaderbo
         ) : (
           topScores.map((score, index) => (
             <div 
-              key={score.id} 
+              key={score.player_name} 
               className={`flex justify-between items-center p-3 rounded ${index === 0 ? 'bg-[#2a220d] border border-[var(--gold-primary)]/30' : 'bg-[#222]'}`}
             >
               <div className="flex items-center gap-3">
@@ -122,9 +172,14 @@ export default function Leaderboard({ currentScore, onScoreSubmitted }: Leaderbo
                   {score.player_name}
                 </span>
               </div>
-              <span className={`font-mono font-bold ${score.marbles_remaining === 1 ? 'text-[var(--gold-primary)]' : 'text-white'}`}>
-                {score.marbles_remaining}
-              </span>
+              <div className="text-right">
+                <span className={`font-mono font-bold text-lg ${score.min_marbles === 1 ? 'text-[var(--gold-primary)]' : 'text-white'}`}>
+                  {score.min_marbles}
+                </span>
+                <div className="text-[10px] text-gray-500 uppercase mt-0.5">
+                  Avg: {score.avg_marbles} • {score.games_played} games
+                </div>
+              </div>
             </div>
           ))
         )}

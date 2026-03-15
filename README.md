@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurelian Solitaire + Offline RL Research
 
-## Getting Started
+This repository hosts the **Aurelian Solitaire** experience: a stylized peg-solitaire challenge in Next.js with confetti rewards, global leaderboards, and an embedded hint system powered by ONNX inference inside the browser. Every game played on the deployed web app (https://ss-game-three.vercel.app/) streams trajectories (state-action pairs) to Upstash Redis so they can be re-used in offline reinforcement learning experiments.
 
-First, run the development server:
+## Play the Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Visit https://ss-game-three.vercel.app/ to play the fully functional UI built in `src/components/GameBoard.tsx` plus the leaderboard in `src/components/Leaderboard.tsx`.
+- Every completed game (wins, losses, and everything in between) pushes its trajectory to `rl:trajectories` inside Upstash. That log becomes the single replay buffer for the offline RL experiments.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Research Objective
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The goal is to compare off-policy policy-gradient algorithms (starting with REINFORCE and later GRPO or similar candidates) trained only on logged data — no live rollout, only the human + synthetic trajectories collected in `ss_game_rl/trajectories.json`. The experiments aim to answer: which offline policy-gradient approach converges to a better peg-solitaire policy when replaying fixed behavior data?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Off-policy REINFORCE Primer
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Trajectories saved by the browser consist of a 49-character board string plus the chosen `(row, col, direction)` action and the final marble count.
+- `ss_game_rl/train.py` replays those logs, constructs tensors via `board_to_tensor()`, and computes normalized returns that backpropagate the final reward signal (currently +100 for a perfect single-peg finish and -2 per remaining peg).
+- The training loop treats these returns as the per-timestep objective, divides by the batch standard deviation to keep gradients stable, and updates the shared policy network — a classic REINFORCE update applied to off-policy, logged data rather than freshly collected rollouts.
+- This setup makes it straightforward to swap in alternative policy-gradient critics (GRPO, AWAC, etc.) later and compare their simulator win rates plus OPE estimates while keeping the replay buffer constant.
