@@ -18,14 +18,16 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Offline RL experiment orchestration for Peg Solitaire.')
     parser.add_argument('--human-data', default=str(current_dir / 'human_data.json'), help='Path to real human offline trajectories.')
     parser.add_argument('--synthetic-data', default=str(current_dir / 'synthetic_data.json'), help='Path to synthetic generated offline trajectories.')
-    parser.add_argument('--epochs', type=int, default=50)
-    parser.add_argument('--batch-size', type=int, default=32)
+    parser.add_argument('--epochs', type=int, default=10)
+    parser.add_argument('--batch-size', type=int, default=128)
     parser.add_argument('--lr', type=float, default=1e-3)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--win-reward', type=float, default=100.0)
     parser.add_argument('--loss-penalty-multiplier', type=float, default=2.0)
     parser.add_argument('--step-penalty', type=float, default=-1.0)
-    parser.add_argument('--algorithm', type=str, choices=[alg.value for alg in train.Algorithm], default=train.Algorithm.REINFORCE.value)
+    parser.add_argument('--clip-epsilon', type=float, default=0.2)
+    parser.add_argument('--kl-coef', type=float, default=0.01)
+    parser.add_argument('--algorithm', type=str, choices=[alg.value for alg in train.Algorithm], default=train.Algorithm.GRPO.value)
     parser.add_argument('--model-path', default=str(current_dir / 'peg_solitaire_policy.pth'))
     parser.add_argument('--onnx-path', default=str(current_dir.parent / 'public' / 'peg_solitaire_policy.onnx'))
     parser.add_argument('--eval-games', type=int, default=200)
@@ -65,6 +67,8 @@ def run_training(args):
         win_reward=args.win_reward,
         loss_penalty_multiplier=args.loss_penalty_multiplier,
         step_penalty=args.step_penalty,
+        clip_epsilon=args.clip_epsilon,
+        kl_coef=args.kl_coef
     )
     if model is None:
         return None

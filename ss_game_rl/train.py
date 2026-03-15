@@ -95,8 +95,10 @@ class PolicyNetwork(nn.Module):
         super().__init__()
         self.conv_layers = nn.Sequential(
             nn.Conv2d(1, 32, kernel_size=3, padding=1),
+            nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.Flatten()
         )
@@ -104,6 +106,7 @@ class PolicyNetwork(nn.Module):
         self.fc_layers = nn.Sequential(
             nn.Linear(3136, 512),
             nn.ReLU(),
+            nn.Dropout(p=0.2),
             nn.Linear(512, 196)
         )
 
@@ -124,16 +127,57 @@ def reinforce_training_step(model, optimizer, states, actions, rewards):
     return loss.item()
 
 
+def grpo_training_step(model, old_model, optimizer, states, actions, rewards, clip_epsilon=0.2, kl_coef=0.01):
+    optimizer.zero_grad()
+    
+    # 1. Group Advantage (Z-Score Normalization across the batch)
+    if rewards.std() > 0:
+        advantages = (rewards - rewards.mean()) / (rewards.std() + 1e-8)
+    else:
+        advantages = rewards - rewards.mean()
+
+    # 2. Current Policy Probabilities
+    logits = model(states)
+    probs = torch.softmax(logits, dim=1)
+    action_probs = probs.gather(1, actions.unsqueeze(1)).squeeze(1)
+    
+    # 3. Old Policy Probabilities (No gradients)
+    with torch.no_grad():
+        old_logits = old_model(states)
+        old_probs = torch.softmax(old_logits, dim=1)
+        old_action_probs = old_probs.gather(1, actions.unsqueeze(1)).squeeze(1)
+        
+    # 4. Probability Ratio
+    ratio = action_probs / (old_action_probs + 1e-10)
+    
+    # 5. Clipped Surrogate Objective
+    surr1 = ratio * advantages
+    surr2 = torch.clamp(ratio, 1.0 - clip_epsilon, 1.0 + clip_epsilon) * advantages
+    policy_loss = -torch.min(surr1, surr2).mean()
+    
+    # 6. KL Divergence Penalty
+    kl_div = torch.sum(old_probs * (torch.log(old_probs + 1e-10) - torch.log(probs + 1e-10)), dim=1).mean()
+    
+    loss = policy_loss + kl_coef * kl_div
+    
+    loss.backward()
+    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=0.5)
+    optimizer.step()
+    return loss.item(), kl_div.item()
+
+
 def train_model(
-    data_path="trajectories.json",
+    data_path=["human_data.json", "synthetic_data.json"],
     epochs=50,
     batch_size=32,
     lr=1e-3,
-    algorithm=Algorithm.REINFORCE,
+    algorithm=Algorithm.GRPO,
     gamma=0.99,
     win_reward=100.0,
     loss_penalty_multiplier=2.0,
-    step_penalty=-1.0
+    step_penalty=-1.0,
+    clip_epsilon=0.2,
+    kl_coef=0.01
 ):
     dataset = PegSolitaireDataset(
         data_path,
@@ -149,18 +193,41 @@ def train_model(
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     model = PolicyNetwork()
     optimizer = optim.Adam(model.parameters(), lr=lr)
+    
+    old_model = None
+    if algorithm == Algorithm.GRPO:
+        old_model = PolicyNetwork()
+        old_model.load_state_dict(model.state_dict())
+        old_model.eval()
 
     logging.info('Training %s on %d samples', algorithm.value, len(dataset))
 
     for epoch in range(epochs):
         epoch_loss = 0.0
+        epoch_kl = 0.0
+        
         for states, actions, rewards in dataloader:
             if algorithm == Algorithm.REINFORCE:
                 epoch_loss += reinforce_training_step(model, optimizer, states, actions, rewards)
+            elif algorithm == Algorithm.GRPO:
+                loss, kl = grpo_training_step(
+                    model, old_model, optimizer, states, actions, rewards,
+                    clip_epsilon=clip_epsilon, kl_coef=kl_coef
+                )
+                epoch_loss += loss
+                epoch_kl += kl
+                
+                # Soft-update old_model every batch to prevent the probability ratio from exploding
+                with torch.no_grad():
+                    for param, old_param in zip(model.parameters(), old_model.parameters()):
+                        old_param.data.copy_(0.995 * old_param.data + 0.005 * param.data)
             else:
                 raise NotImplementedError(f'Algorithm {algorithm} is not implemented yet')
 
-        logging.info('Epoch %d/%d - avg loss %.4f', epoch + 1, epochs, epoch_loss / len(dataloader))
+        if algorithm == Algorithm.GRPO:
+            logging.info('Epoch %d/%d - avg loss %.4f - KL Div %.4f', epoch + 1, epochs, epoch_loss / len(dataloader), epoch_kl / len(dataloader))
+        else:
+            logging.info('Epoch %d/%d - avg loss %.4f', epoch + 1, epochs, epoch_loss / len(dataloader))
 
     return model
 
@@ -175,7 +242,9 @@ def parse_args():
     parser.add_argument('--win-reward', type=float, default=100.0)
     parser.add_argument('--loss-penalty-multiplier', type=float, default=2.0)
     parser.add_argument('--step-penalty', type=float, default=-1.0)
-    parser.add_argument('--algorithm', type=str, choices=[alg.value for alg in Algorithm], default=Algorithm.REINFORCE.value)
+    parser.add_argument('--clip-epsilon', type=float, default=0.2)
+    parser.add_argument('--kl-coef', type=float, default=0.01)
+    parser.add_argument('--algorithm', type=str, choices=[alg.value for alg in Algorithm], default=Algorithm.GRPO.value)
     return parser.parse_args()
 
 
@@ -194,6 +263,8 @@ def main():
         win_reward=args.win_reward,
         loss_penalty_multiplier=args.loss_penalty_multiplier,
         step_penalty=args.step_penalty,
+        clip_epsilon=args.clip_epsilon,
+        kl_coef=args.kl_coef
     )
 
     if model is None:

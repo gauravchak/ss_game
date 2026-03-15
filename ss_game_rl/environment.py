@@ -114,7 +114,7 @@ def generate_random_trajectory():
         
     return {
         "id": f"synthetic_random_{random.randint(10000, 99999)}",
-        "outcome": info.get("pegs", 32),
+        "outcome": int(info.get("pegs", 32)),
         "timestamp": "synthetic",
         "moves": trajectory
     }
@@ -204,46 +204,28 @@ def generate_perfect_trajectory():
 if __name__ == "__main__":
     import json
     import os
+    import time
     
-    print("Generating synthetic trajectories...")
-    samples = []
+    print("Generating 10,000 synthetic random trajectories...")
     output_file = "synthetic_data.json"
     
-    if not os.path.exists(output_file):
-        with open(output_file, 'w') as f:
-            json.dump([], f)
+    # Load existing if any, or start fresh
+    samples = []
     
-    # Generate perfect games using randomized rollouts + DFS solvers
-    print("Generating perfect wins via DFS (this will take 1-2 minutes)...")
-    wins_needed = 5  # Reduced to finish faster
-    attempts = 0
-    wins_found = 0
-    while wins_found < wins_needed:
-        attempts += 1
-        traj = generate_perfect_trajectory()
-        if traj and traj['outcome'] == 1:
-            wins_found += 1
-            print(f"  Found perfect game! ({wins_found}/{wins_needed}) in {attempts} random DFS rollouts.")
-            attempts = 0 # reset
-            
-            with open(output_file, 'r') as f:
-                existing = json.load(f)
-            existing.append(traj)
-            with open(output_file, 'w') as f:
-                json.dump(existing, f, indent=2)
-            
-    # Generate random losing games to teach the network what NOT to do
-    print("Generating 80 random losing games...")
-    for i in range(80):
+    start_time = time.time()
+    num_games = 10000
+    
+    for i in range(num_games):
         traj = generate_random_trajectory()
-        
-        with open(output_file, 'r') as f:
-            existing = json.load(f)
-        existing.append(traj)
-        with open(output_file, 'w') as f:
-            json.dump(existing, f, indent=2)
+        if traj:
+            samples.append(traj)
             
-        if (i+1) % 10 == 0:
-            print(f"  Saved {i+1}/80 random games...")
-        
-    print(f"Done generating synthetic games.")
+        if (i+1) % 1000 == 0:
+            print(f"  Generated {i+1}/{num_games} games...")
+
+    # Overwrite the file with the new batch
+    with open(output_file, 'w') as f:
+        json.dump(samples, f, indent=2)
+            
+    elapsed = time.time() - start_time
+    print(f"Done generating {num_games} synthetic games in {elapsed:.1f} seconds. Saved to {output_file}")
