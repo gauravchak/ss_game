@@ -14,10 +14,9 @@ def board_to_tensor(board_str):
     return torch.tensor(arr, dtype=torch.float32).view(1, 7, 7) # (Channels, Height, Width)
 
 class PegSolitaireDataset(Dataset):
-    def __init__(self, trajectories_file):
+    def __init__(self, trajectories_file, gamma=0.99):
         """
-        Loads data. Expects a JSON file with a list of game trajectories:
-        { "outcome": X, "moves": [ {"state": "...", "action": {"row": r, "col": c, "dir": d}} ] }
+        Loads data and computes discounted rewards for Policy Gradient.
         """
         self.transitions = []
         if os.path.exists(trajectories_file):
@@ -25,22 +24,39 @@ class PegSolitaireDataset(Dataset):
                 data = json.load(f)
                 
             for game in data:
-                # Basic Behavioral Cloning: Just learn the actions humans took.
-                # In true Offline RL (like CQL or AWAC), you would weight these by the 'outcome'.
                 outcome = game.get('outcome', 32)
-                weight = 1.0 / (outcome + 1) # Prefer games that ended with fewer pegs
                 
-                for move in game['moves']:
+                # Base Reward Formulation:
+                # We want a high positive reward for winning (1 peg)
+                # and negative rewards for losing.
+                if outcome == 1:
+                    final_reward = 100.0
+                else:
+                    final_reward = -float(outcome * 2)
+                    
+                moves = game['moves']
+                returns = []
+                
+                # Calculate Discounted Returns (backwards)
+                R = final_reward
+                for _ in reversed(moves):
+                    returns.insert(0, R)
+                    R = -1.0 + gamma * R # Small step penalty (-1) + discounted future reward
+                    
+                # Normalize returns for training stability (standard Policy Gradient trick)
+                returns = np.array(returns)
+                if len(returns) > 1 and returns.std() > 0:
+                    returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+                
+                for i, move in enumerate(moves):
                     state = board_to_tensor(move['state'])
                     
-                    # Convert action (r, c, dir) into a single integer class (0 to 195)
-                    # 7 * 7 * 4 = 196 possible moves total
                     r = move['action']['row']
                     c = move['action']['col']
                     d = move['action']['dir']
                     action_idx = (r * 7 * 4) + (c * 4) + d
                     
-                    self.transitions.append((state, action_idx, weight))
+                    self.transitions.append((state, action_idx, returns[i]))
         else:
             print(f"Warning: {trajectories_file} not found. Run fetch_data.py first.")
 
@@ -48,8 +64,8 @@ class PegSolitaireDataset(Dataset):
         return len(self.transitions)
 
     def __getitem__(self, idx):
-        state, action, weight = self.transitions[idx]
-        return state, torch.tensor(action, dtype=torch.long), torch.tensor(weight, dtype=torch.float32)
+        state, action, discounted_reward = self.transitions[idx]
+        return state, torch.tensor(action, dtype=torch.long), torch.tensor(discounted_reward, dtype=torch.float32)
 
 
 class PolicyNetwork(nn.Module):
@@ -87,29 +103,37 @@ def train_model(data_path="trajectories.json", epochs=50, batch_size=32):
     
     model = PolicyNetwork()
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
-    # Using CrossEntropyLoss for behavioral cloning (classification task)
-    criterion = nn.CrossEntropyLoss(reduction='none') 
     
-    print(f"Starting training on {len(dataset)} state-action pairs...")
+    print(f"Starting Policy Gradient training on {len(dataset)} state-action pairs...")
     
     for epoch in range(epochs):
         total_loss = 0
-        for states, actions, weights in dataloader:
+        for states, actions, rewards in dataloader:
             optimizer.zero_grad()
             
+            # 1. Forward pass: Get raw logits for all 196 possible actions
             logits = model(states)
             
-            # Unweighted loss: loss = criterion(logits, actions)
-            # Weighted loss based on the game's final outcome:
-            unweighted_loss = criterion(logits, actions)
-            loss = (unweighted_loss * weights).mean()
+            # 2. Get probabilities using Softmax
+            probs = torch.softmax(logits, dim=1)
+            
+            # 3. Gather the predicted probabilities of the actions that were ACTUALLY taken in the trajectory
+            # Gather expects indices of shape (batch, 1), so we unsqueeze(1) and then squeeze() the result
+            action_probs = probs.gather(1, actions.unsqueeze(1)).squeeze(1)
+            
+            # 4. Calculate REINFORCE Loss: -log(P(action)) * Reward
+            # We want to maximize the probability of actions that led to high rewards.
+            # PyTorch minimizes loss, so we use negative log probability.
+            log_probs = torch.log(action_probs + 1e-10) # Add epsilon to prevent log(0)
+            
+            loss = -(log_probs * rewards).mean()
             
             loss.backward()
             optimizer.step()
             
             total_loss += loss.item()
             
-        print(f"Epoch {epoch+1}/{epochs} - Loss: {total_loss/len(dataloader):.4f}")
+        print(f"Epoch {epoch+1}/{epochs} - PG Loss: {total_loss/len(dataloader):.4f}")
         
     print("Training complete! Saving model...")
     torch.save(model.state_dict(), "peg_solitaire_policy.pth")
