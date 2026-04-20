@@ -2029,5 +2029,8041 @@
         }
       }
     ]
+  },
+  {
+    "id": "1773628020200_mkgx8",
+    "outcome": 2,
+    "timestamp": "2026-03-16T02:27:00.200Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOOO..  OO.    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOO.OOOOO.O..OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOOO..OOO.O..OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OOOO.O.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOOOO..OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..O.OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..O.OOO....OOO.OO.  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..O.OOO....OOOO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..O.OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    OO.  OOO..O.OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ..O  OOO..O.OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.OO.OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OOOO...OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    O..  OO.O...OO.....OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    O..  ..OO...OO.....OO..O..  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ...O...OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ...O...O..O...OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  .......O......OO.OO..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  .......O......OOO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1773869836410_pyvp9",
+    "outcome": 2,
+    "timestamp": "2026-03-18T21:37:16.410Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOOO..  OO.    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO.O.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO.OO.  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOO.....OO..OO.  O..    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOO.......O.OO.  O..    ...  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO........OO.  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.......O...  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOO.OOOOO.O.....O...  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOOO..OOO.O.....O...  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO.......O...  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.O...OO.......OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.O...OO......O.....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OO.OO..OO......O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OO...O.OO......O.....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO.O.O.OO......O.....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOOO.O.OO......O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO.OO......O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO.O...OO......O.....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO.O.....O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..OO.....O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1774025592615_82idh",
+    "outcome": 2,
+    "timestamp": "2026-03-20T16:53:12.615Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOO.OOOOO.O..OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOOO..OOO.O..OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OOOOO..  OO.    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OOOO.O.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOOOO..OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..O.OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOO.O.OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OO.OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.OO.OOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    O..  OO..OO.OO.....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    O..  ..O.OO.OO.....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    O..  ..O.OO.OO.....OO.O...  O..    O..  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ....OO.OOO....OO.O...  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  .O..OO.O.O....O..O...  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO...O.......O...  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO...O......OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO...O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO.O.....O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..OO.....O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775016706442_dpfxo",
+    "outcome": 4,
+    "timestamp": "2026-04-01T04:11:46.442Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO.OOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO..OOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOOOO.OOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..OOOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..OOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O..OO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O..OO..O..OO.O..O  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO....OO.....OO.OO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO....OO.....OO...OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO....OO.....OO..O..  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO....OO.....OOO.O..  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO......O....OOO.O..  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO...........OO..O..  O..    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.............O.O..  O..    ...  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO......O........O..  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOO.....O........O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O....O........O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ..O.O....O........O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775016848646_4l9tf",
+    "outcome": 7,
+    "timestamp": "2026-04-01T04:14:08.646Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOOO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OO..O....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOO.OO..O....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO..OOO..O....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO.OOO.......OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO.OOO.........O.O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO.OOO..O........O..  .OO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O..  OOO..OO..O.O......O..  .OO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O..  OOO.OOO..O...........  .OO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O..  OOO.OOO..O........O..  .O.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O..  OOO.OOO..O........O..  .O.    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O..  O..OOOO..O........O..  .O.    ..O  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ..O    ...  O.OOOOO..O........O..  .O.    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ..O    ...  OO..OOO..O........O..  .O.    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ...  ..O.OOO..O........O..  .O.    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775016917000_2a0zy",
+    "outcome": 3,
+    "timestamp": "2026-04-01T04:15:17.000Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.O..OOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O.O  OOO..OOOOO....OOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O.O  OOO.O..OOO....OOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....OOO.O..OOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....OOO.O..OO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OO...OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO.O..OO.....  OO.    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO.O..OOO....  .O.    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO.O..OOO....  .O.    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OO..O..OO.....  OO.    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OO..O..OOO....  .O.    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OO..O..O..O...  .O.    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    ...  OO..O..OOO.O..O..O...  .O.    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O..OOO.O..O..O...  .O.    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  ....O..OO..O..O..O...  .O.    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  O...O...O..O.....O...  .O.    ...  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  O...O...O.OO.........  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  O...O...OO...........  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  O...O..O.............  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775017054606_xdch0",
+    "outcome": 6,
+    "timestamp": "2026-04-01T04:17:34.606Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO.OOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOOOOO..OOOOOO..O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  O..OOOOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  O.O..OOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  O.OO.OOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO..O..OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO..O..OOOOOO..O  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO..O..OOOO..O.O  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO..O..OO..O.O.O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O..OO..O..OO..O.O.O  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  ..O.OOO..O..OO..O.O.O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  ..OO..O..O..OO..O.O.O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ....O.O..O..OO..O.O.O  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  ....O.O..O.O....O.O.O  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O.O  ......O..O......O.O.O  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775242934130_c15wa",
+    "outcome": 6,
+    "timestamp": "2026-04-03T19:02:14.130Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO.O..OOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOOO..OOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO..O.OOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOO....OOOO.O.O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOO....OOOOOO.O  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOO....OOOO..OO  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOO....OOOO.O..  O.O    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO.OO.....OOO.O.O  O.O    O.O  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO.OO..O..OOO...O  O..    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OO.OO..O..O..O..O  O..    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OO...O.OO.....O..OO.O  O..    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO...O.OO.....O....OO  O..    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO...O.OO.....O...O..  O..    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO...O.OO.....O.O.O..  ...    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO...O...O....O.O.O..  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775243006547_p0pcb",
+    "outcome": 2,
+    "timestamp": "2026-04-03T19:03:26.547Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOO...OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOO...OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O..OO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..OO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O..OO..OO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O.O....OO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O.O....OOO....OO..O..  .OO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O......OO.....OOO.O..  .OO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O........O....OOO.O..  .OO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O.............OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O...............O.O..  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O...............OOO..  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O...............O..O.  O.O    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O...............O.OO.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O...............OO...  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O..............O.....  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775243135829_717f3",
+    "outcome": 3,
+    "timestamp": "2026-04-03T19:05:35.829Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.OOOOO...OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.OOOOO..O..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO.....  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OO.OOO..O.OO....O  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OO...OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  O..OO..OOO....OO...OO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O.OOO..OOO....OO...OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO..O..OOO....OO...OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO..O..OOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..O..OOO.O..OO.....  OO.    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..O..OOO.O..OO.O...  O..    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OO.....OOO....OO.OO..  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO.....O..O...OO.OO..  O..    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO.....O..O...OOOOO..  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO.....O..O...OOO..O.  ...    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..O....O..O...OOO..O.  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.......O....OO..O.  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.......O......O.O.  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O.OO...............O.  ...    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775243221270_ueubu",
+    "outcome": 3,
+    "timestamp": "2026-04-03T19:07:01.270Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOO..O.OO  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOO.OO.OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOO...OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO..OOOOOO..OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOOO..OOOOOO..OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.OOOOO..OOOOOO..OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO..OOOO...OOOOO.OOO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOO.OOOO...OOOOO.OOO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOO.OOO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOO..O..OOOOO.OOO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOO.....OOOO..OOO  O..    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOO.....OO..O.OOO  O..    ...  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOO..O..OO....OOO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO.O..O..O..OO....OOO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ..OO..O..O..OO....OOO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ....O.O..O..OO....OOO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ..O.O.O..O..OO....OOO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    O..  ....O.O.....OO....OOO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    O..  ....O.O.....OO...O..O  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    O..  ....O.O....O.....O..O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    O..  ......O..........OO.O  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775243328701_0oprb",
+    "outcome": 3,
+    "timestamp": "2026-04-03T19:08:48.701Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.OOOOO...OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.OOOOO..O..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO.....  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO.O...  O.O    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO.OO..  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO...O.  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.O..OO...O.  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO.....OOO.OO.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO.....OOOO...  O..    O..  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOOO....OO.O...  ...    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOOO......OO...  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO........O...  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO.......OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO......O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  .O...OO.O.....OO.....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  .O...OO.O.......O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  .....OO........OO....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OO........OO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775243398216_z6q68",
+    "outcome": 4,
+    "timestamp": "2026-04-03T19:09:58.216Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.O..OOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO....OOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..O..O...OOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..O.OO...OO.OOOO  .OO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OO.....OO.OOOO  .OO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OO.....OO.OOOO  O..    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OO.....OOOOOOO  ...    .OO  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O....O....OOOOOOO  ...    .OO  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O.........OO.OOOO  O..    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O.........OO.OOOO  O..    O..  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    ...  OO..O....O....OO.OOOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O....O....OO.OOOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O....O....OOO..OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O....O....O..O.OO  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O....O....O.OO.OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O....O....OO...OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    ...  ..O.O....O......O..OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  ....O...........O..OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775449232454_hrsfq",
+    "outcome": 3,
+    "timestamp": "2026-04-06T04:20:32.454Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO.O..  .OO    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOOO..  ..O    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO..O.  ..O    ..O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO.OO.  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....O..OOO.  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO.....O.OOOO.  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO.....OO..OO.  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO.....OO.O...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO.......OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO......O.....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOO..O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  ..OOOOO..O.....O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  ...OOOO........OO....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  ..O..OO........OO....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  ..O.O..........OO....  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OO.  ..O........O...OO....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O..  ..OO.......O...OO....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O..  ....O......O...OO....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  ...............OO....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ..O    ..O  ..O............OO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775449328975_g8o3y",
+    "outcome": 4,
+    "timestamp": "2026-04-06T04:22:08.975Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO.O..OOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOOO..OOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OOOO..OOO..O..OOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OOOOO.OOO.....OOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OOO..OOOO.....OOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..OO.....OOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..OO.....OOO.O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..OO..O..OOO....  OO.    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO....OO.....OOO.O..  OO.    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OOO....OO.....OOOOO..  O..    O.O  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OOO....OOO....OO.OO..  ...    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OOO....OOO....OOO....  ...    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO....OO.....OO.....  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OOO......O....OO.....  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    O..  OO............OO.....  O..    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    O..  ..O...........OO.....  O..    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    O..  ..O...........OOO....  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775449399958_ppzsw",
+    "outcome": 4,
+    "timestamp": "2026-04-06T04:23:19.958Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO.O..OOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO....OOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO.O..OOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO....OO..O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O..OOO.O..OO.....  OO.    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....OOO....OO..O..  OO.    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....OOO....OO.OO..  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....O..O...OO.OO..  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....O......OO..O..  OO.    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....O......OOO.O..  .O.    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO....O......O..OO..  .O.    ..O  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    ...  OO.....O.O....O..OO..  .O.    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    ...  ..O....O.O....O..OO..  .O.    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    ...  O.O......O.......OO..  .O.    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  O................OO..  .O.    ..O  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O.O..............OO..  .O.    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775449480603_8s0aw",
+    "outcome": 5,
+    "timestamp": "2026-04-06T04:24:40.603Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOOO.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O..OOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.O..OO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.O..OO...OOOOOOOOO  O.O    O.O  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.O..OOO..OOOO.OOOO  ..O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.O..OOO..OO..OOOOO  ..O    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.O..OO...OO...OOOO  O.O    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.O....O..OO...OOOO  O.O    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O.......OO..OOOOO  O.O    O.O  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O......OOO..OO.OO  O..    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O......OOO..OOO..  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O.......OO..OO...  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O.......OO....O..  O.O    O.O  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O......OOO.......  O..    O.O  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O.....O..O.......  O..    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  ....O.....O..O..O....  ...    ..O  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O..  ..........OO.O..O....  ...    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O..  .........O...O..O....  ...    ..O  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775449601567_9r6mh",
+    "outcome": 4,
+    "timestamp": "2026-04-06T04:26:41.567Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO.OOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOOO.OOO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOO..OOOO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOO.O..OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  O.O.OOOO....OOOOO..OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  O.O.OOOO....OOO..O.OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  O.OOOOOO....OOO..O.OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO..OOOO....OOO..O.OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O.OOOO....OOO..O.OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  O.O.OOO.....OO...O.OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  O.OO..O.....OO...O.OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO....O.....OO...O.OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O.O.....OO...O.OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O.O....O.....O.OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO....O..........OOOO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ..O...O..........OOOO  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    ...  ......O..O.......OOOO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  ......O..O......O..OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775449837954_eml95",
+    "outcome": 2,
+    "timestamp": "2026-04-06T04:30:37.954Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO.OOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOOOOO..OOOOO.OOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO..O..OO..OOO  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO.....OO...OO  O.O    O..  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO.....OO..O..  O.O    O..  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  O..OOOOOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  .OO    .OO  O.OOOOOOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  .OO    .OO  OO..OOOOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  .OO    .OO  OO.O..OOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  .O.    .O.  OO.OO.OOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  .O.    .O.  OO...OOOO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  .O.    .O.  OO..O..OO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  .O.    .O.  ..O.O..OO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ..OOO..OO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ..O  ..OO...OO.....OO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ..O  ....O..OO.....OO.....  O..    O..  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  .......OO..O..OO.....  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  .......OO..O..OOO....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  .........O.O..OOO....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ...........O..OO.....  O..    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775619614396_k4yen",
+    "outcome": 4,
+    "timestamp": "2026-04-08T03:40:14.396Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O..  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOO..OO..  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO..OOOO.OOO..  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO..OOOOO..O..  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO..OOOOOO.O..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO..OOOO..OO..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO..OOOO.O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO.OOOOOO.O..OO.O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOOO.O..OO.O....  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO...OOOOOO..OO.O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO...OOOO..O.OO.O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO...OO..O.O.OO.O....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    .O.  OO..OOO..O.O.OO.O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    .OO  OO...OO..O...OO.O....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    .OO  OO...OO..O...OO.O....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    .O.  OO..OOO..O...OO.O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    .O.  OO.O..O..O...OO.O....  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OO....O..OO..OO.O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO....O.O....OO.O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O.....O......OOOO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775619703885_fs4uu",
+    "outcome": 6,
+    "timestamp": "2026-04-08T03:41:43.885Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.OOOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O..OOOOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O.O..OOOO...OOOOO.OOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O.O..OOOOO..OOOO..OOO  .OO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O....OOOO...OOOOO.OOO  .OO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO...OOO....OOO.O.OOO  .OO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OOO.O.OOO  .OO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OOO.OOOOO  ..O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OOOO..OOO  ..O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OO..O.OOO  ..O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OO..OO..O  ..O    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OO..OOO.O  ...    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OO..O..OO  ...    O..  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO....OO..O.O..  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ..O..OOO...O....O.O..  ...    O..  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775619779058_5uri1",
+    "outcome": 6,
+    "timestamp": "2026-04-08T03:42:59.058Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOOOOO  OO.    OO.  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOOO.OOOOO.OOO  O..    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOOO.OOOOO.OOO  O..    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOOOO..OOO.OOO  O..    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOOO...OOO..OO  O.O    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOO..O..OOO..OO  O.O    ..O  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO.O..OO...OO  ..O    ..O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO.O..OO..OOO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO....OO...OO  ..O    ...  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO....OO..O..  ..O    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOOO.OOOO....OO..O..  ..O    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO....OO..O..  ..O    ...  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO.O..OO.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OOOO..O..OOO....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ..O    ..O  OOO..OOOO..O..OOO....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ..O  O..O.OOOO..O..OOO....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O..OOOOOO..O..OOO....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O.O..OOOO..O..OOO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OOO..OOO...O..O.O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O..O.OOO...O..O.O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775619846797_2crtr",
+    "outcome": 4,
+    "timestamp": "2026-04-08T03:44:06.797Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO.OOOOOOO.OOOOOO.O  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOOO..OOOOO.OOOOOO.O  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOOO.OOOOOO..OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO..OOOOOOO..OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    O..  OOO.OOOOOOOO..OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    O..  OOO.OOOOOOOO..OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ..O    O.O  OOO..OOOOOO...OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    O.O  OOO..OOOO..O..OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ..O    ..O  OO...OOOOO.O..OOOOO..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ..O    ..O  OO...OOOOOOO..OOO.O..  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ..O  OO...OOOOO..O.OOO.O..  O.O    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOOO..O.OOO.O..  O.O    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOOO.OO.OOO....  O..    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOOOO...OOO....  O..    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOOOO...O..O...  O..    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOOOO...O.OO...  ...    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOOOO...O.OO...  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OO..OOOOO.O...O..O...  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..O.OOOOO.O...O..O...  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.OOO.O.O......O...  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.OOO.O.O.....OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.OOO.O.O....O.....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.OOO...O..........  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O..OOOO...O..........  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620051369_zw4e3",
+    "outcome": 4,
+    "timestamp": "2026-04-08T03:47:31.369Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOOO.O  O..    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO..OO  O..    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO..OO  O..    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.O..  O..    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO.OOOOO....  O.O    ..O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO.OOOOO.O..  O..    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOOO..OOOOOOO..  O..    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOOO..OOOO.OO..  ...    O..  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOOO..OOOOO....  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOO.....  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOOOO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOOOO...OOO..O...  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.OOO..O..OOO..O...  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOO.....OOO.OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOO.....OOOO.....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..OOO.....OO..O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  ..O.OOO.....OO..O....  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  ....OOO..O..OO..O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  ....O.O..O...O..O..O.  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  ....O....O......O..OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    .OO  ....O....O......O.O..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    .OO  ..O.O.............O..  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .O.  ..O........O......O..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    .O.  ..O.O................  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620148051_qkh36",
+    "outcome": 3,
+    "timestamp": "2026-04-08T03:49:08.051Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO.OOOOOO.OOOOOOO.O  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO.OOOOOO.OOOOO..OO  O.O    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOOOO..OOOOOO.OO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOOOO..OOOO..OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOOOO..OOOO.O..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOO..O.OOOO.O..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOO....OOOO....O  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOO....OO..O...O  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  .OO..OO.....OOO.O...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  .OO..OO.....OOO.OO..O  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  .OO..OO.....OOOO....O  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  .OO..OO.....OO..O...O  O.O    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  .OO.O.......OO..O...O  O.O    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  .OO.O.O.....O...O....  O.O    O.O  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OOOO.O.....O...O....  O.O    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OO..OO.....O...O....  O.O    O.O  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OO...O.........O..O.  O.O    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OO...O.........O.OO.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OO...O.........OO...  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OO...O........O.....  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  .OO...O........OO....  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    ..O  .O....O..O.....OO....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    ..O  .OO...O........O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  ...O..O........O.....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    ...  ...OO.O........O.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620297549_9yeho",
+    "outcome": 3,
+    "timestamp": "2026-04-08T03:51:37.549Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OO..O.OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OO.OO.OOOO.O.OO  .OO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOO...OOOO.O.OO  .OO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOO...OO..OO.OO  .OO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.O..O..OO..OO.OO  .OO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.O.....OO...O.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.O.....OO...OO..  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.O.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOOO.O.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO...OO..O..OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  ..O..OO..O..OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  .....OO.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ..O    ..O  ..O..OO.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ..O.OOO.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ..OO..O.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ....O.O.....OO.....O.  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ....O.......O......OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ....O.......O.....O..  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  ....O......OO........  OO.    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ............O.....O..  OO.    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  ............O....OO..  O..    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ............O......O.  O..    O.O  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620504817_fpvbl",
+    "outcome": 4,
+    "timestamp": "2026-04-08T03:55:04.817Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    OOO  OOO...OOOO..OOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O.O  OOOO..OOOO..OOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O.O  OO..O.OOOO..OOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO....OOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO....OOOO.OOOOOO.O..  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O.OOOO..OOOOO....  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.O.OOO...OOOO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  O..OO.OOO...OOOO.....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  O....OOOO...OOOO.....  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  O....OOOO...OO..O....  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  .....OO.O...OOO.O....  O..    O..  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  .....OO.OO..OOO......  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  .....OOO....OOO......  ...    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  O....OO.....OO.......  ...    O..  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O.O..OO.....OO.......  ...    O..  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.O.......OO.......  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620594915_p0ex7",
+    "outcome": 3,
+    "timestamp": "2026-04-08T03:56:34.915Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOOO.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO.OOOOO...OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO.OOOOO..O..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOO.....  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OOOO...OOOOO....  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO..O..OOOOO....  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOOO.....  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOOOO....  .OO    .OO  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOO..O...  .OO    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOO..OO..  .O.    .O.  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOO.O....  .O.    .O.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOO.OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO.....OOOO.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  O..O.OO.....OOOO.....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ..O    ..O  O.OO.OO.....OOOO.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ..O    ..O  OO...OO.....OOOO.....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ..O  ..O..OO.....OOOO.....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ..O  ..O..OO.....OO..O....  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ..O.OOO.....OO..O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  ..OO..O.....OO..O....  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ....O.O.....OO..O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620691485_wom7j",
+    "outcome": 6,
+    "timestamp": "2026-04-08T03:58:11.485Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOOO.OOOOO.OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO..OOOOOO.OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO.OOOOO..OOOOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO.OOO..O.OOOOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO..OOO....OOOOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO...OOO.O..OOOOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    .OO  OOO..OOO....OOOO...OO  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    .OO  OOO..OOO....OOOOO..OO  .OO    .OO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    ..O  OOOO.OOO....OOOOO..OO  .OO    .OO  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO..OOOO....OOOOO..OO  .OO    .OO  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  ..O.OOOO....OOOOO..OO  .OO    .OO  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    ..O  O.O.OOO.....OO.OO..OO  .OO    .OO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    ..O  O.OO..O.....OO.OO..OO  .OO    .OO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO....O.....OO.OO..OO  .OO    .OO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO....O.....OO.OO.O..  .OO    .OO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO....O....OOO.OO....  .O.    .OO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO....O...O..O.OO....  .O.    .OO  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO....O...O..O...O...  .O.    .OO  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO.O..O......O.......  .O.    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO.O..O......O...O...  ...    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  ..OO..O......O...O...  ...    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    ..O  ....O.O......O...O...  ...    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620777953_1agmk",
+    "outcome": 4,
+    "timestamp": "2026-04-08T03:59:37.953Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOO..OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  O..O.OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  O.OO.OOOO..OOOOO.OOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO..OOOOO.OOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO..OOOOOO..OO  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO...OOOO..OOOOOO.OOO  OO.    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOO..OO  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOOO.OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOO..OOO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOO.O..O  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOOOO..O  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OOOOO...OOOO..O.O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O.OOO....OOO..OOO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O.OOO....OOO.O..O  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O.OOO....OOO.O..O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O..OO.OOO....OOO.O..O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O....OOOO....OOO.O..O  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O...O..OO....OOO.O..O  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    ...  O...O.OOO.....OO.O...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O...O.OOO.......OO...  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ....O.O.O.....O.OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775620860236_fjgtp",
+    "outcome": 3,
+    "timestamp": "2026-04-08T04:01:00.236Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOOO.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOOO.OOOOO..OO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOOO.OOOOO.O..  O.O    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOOOOOOOOO....  O..    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOOOOOOO..O...  O..    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOOOOOOO.OO...  ...    .OO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOOOOOOO.OO...  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOO.OOOOO..O...  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOO.OOOOO.OO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOO.OOOOOO.....  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOO.OOOO..O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO..OOOOO..O....  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO...OOOO.......  O..    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OO..O..OO.......  O..    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO.....OO..O....  O..    ...  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...OO..O..OO.......  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  ..O..OO..O..OO.......  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  ..O.OOO..O..OO.......  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  ..OO..O..O..OO.......  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ....O.O..O..OO.......  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  ..O.O.O..O..OO.......  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ...    O..  ....O.O.....OO.......  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775621124633_z4rov",
+    "outcome": 5,
+    "timestamp": "2026-04-08T04:05:24.633Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO.O.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOOO.OOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOOOO.OO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOOOO..OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOO..O.OOOO..OOO  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOO..OOO..O.OOOO.O..O  OOO    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O.O    O.O  OOOO.OOO....OOOO....O  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    ..O  OO.O.OOO.O..OOOO....O  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    ...  OO.OOOOO.O..OOOO....O  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  OOO..OOO.O..OOOO....O  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  OOO..OOO.O.O..OO....O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    ...  OOO..OOO.O.O..OO.O..O  O.O    O.O  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    ...  OOO..OOO.O.O..OO.OO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    ...  OOO..OOO.O.O..OO...OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  OOO..OOO.O.O..OO..O..  O..    O..  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    ...  OOO.O..O.O.O..OO..O..  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OO..O..O...O..OO..O..  O..    O..  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..O...O..OO..O..  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..O......OO.....  O.O    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  OOO.O..O........O....  O.O    O..  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O..OO..O........O....  O.O    O..  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  O....O.O........O....  O.O    O..  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775621229607_486aj",
+    "outcome": 3,
+    "timestamp": "2026-04-08T04:07:09.607Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOO..O.OO  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOO.OO.OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOO...OO  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOO...OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OO..OOOOO.OOOOOOO..OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OO..OOOOOO..OOOOO..OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOO...OOOO...OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    O.O  O..OOOOOO...OOOO...OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  O.O..OOOO...OOOO...OO  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    ..O  O....OOOOO..OOOO...OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 1,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    ..O  OO...OOO.O..OOO....OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    ..O  ..O..OOO.O..OOO....OO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    ..O  O.O..OO..O..OO.....OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    ...  O.O.OOO..O..OO.....OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ..O    ...  O.O.OOO..O..OO.....OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ..O    ...  O.O.OOO..O.O.......OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  ..O    ..O  O.O..OO..O.........OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  ...    ...  O.O.OOO..O.........OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  O.OO..O..O.........OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  ...    ...  OO....O..O.........OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  ...    ...  ..O...O..O.........OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775621330113_wjdy9",
+    "outcome": 10,
+    "timestamp": "2026-04-08T04:08:50.113Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 1,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOO.OOOOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    O.O  OOOO..OOOOOOOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOO...OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  OOO.O.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OOOOO.OOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO..OOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOOO.OOOOO..OO  O.O    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOO.OOOOOOO.OOOOO.OOO  O..    OO.  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OOOO..OOOOO.OOOOO.OOO  O..    OO.  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO...OOOO..OOOOO.OOO  O..    OO.  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO...OO..O.OOOOO.OOO  O..    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO..OOO..O..OOOO.O.O  O..    OO.  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO..OOO.OO..OOO..O.O  ...    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO..OOO.OO..OOO..O.O  ...    ..O  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO.O..O.OO..OOO..O.O  ...    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    OO.  OOO.O..OO....OOO..O.O  ...    ..O  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    .O.  OO..O..OOO...OOO..O.O  ...    ..O  ",
+        "action": {
+          "row": 3,
+          "col": 1,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    .O.  OO..O..O..O..OOO..O.O  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    .O.  OO..O..O..O..O..O.O.O  ...    ..O  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1775621397907_ufft2",
+    "outcome": 3,
+    "timestamp": "2026-04-08T04:09:57.907Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOO.OOO  O.O    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOOOOOOOO..O  O.O    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO...O  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO.O.O  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOO.O  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOO..OO  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOO..OO  O..    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOO..O.OOOO..OO  O..    O..  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O.OOO...OO  ...    O..  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O.O..O..OO  ...    O..  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOO..O.O.....OO  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOO..O.O..O..OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOO..O.O.O..O..OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOO....O.O.....OO  O..    ...  ",
+        "action": {
+          "row": 1,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO.OOOO..O.O.O.....OO  O..    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    .OO  OOO..OO..O.O.O.....OO  O..    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO...OO....O.O..O..OO  O..    ...  ",
+        "action": {
+          "row": 5,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    .OO  OO...OO..O.O.O.....OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    .OO  ..O..OO..O.O.O.....OO  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  .....OO....O.O.....OO  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  ....OOO....O.O.....OO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OO.    OO.  .....OO......O....OOO  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OO.    OO.  ....O........O....OOO  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OO.    OO.  ....O.O...........OO.  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  ...OO.O...........OO.  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  .....OO...........OO.  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  ....O.............OO.  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "1776650794776_jojvn",
+    "outcome": 3,
+    "timestamp": "2026-04-20T02:06:34.776Z",
+    "moves": [
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.OOOOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOO..OOOOOOOO  OOO    OOO  ",
+        "action": {
+          "row": 5,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOOOO.OOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO..OOOOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOO.OO  OO.    OOO  ",
+        "action": {
+          "row": 4,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO.O..OOOOO..  OO.    OOO  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  OOO    OOO  ",
+        "action": {
+          "row": 6,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOOO..  OO.    OO.  ",
+        "action": {
+          "row": 4,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOO..O.  OO.    OO.  ",
+        "action": {
+          "row": 6,
+          "col": 3,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO.O.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO..OO.  O..    O..  ",
+        "action": {
+          "row": 4,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO.O...  O..    O..  ",
+        "action": {
+          "row": 6,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OOOO...  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOOOOOOOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 1,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOO.OOOOO.O..OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 6,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  OOO    OO.  OOOOO..OOO.O..OO..O..  ...    ...  ",
+        "action": {
+          "row": 3,
+          "col": 4,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  OOO    OOO  OOOO...OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 2,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  OOO    OOO  OO..O..OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 3,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO.OO..OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O.O    O.O  OO...O.OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 4,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  OO..OO.OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 5,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  OO.O...OOO....OO..O..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  OO.O...OOO......O.O..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 2,
+          "dir": 0
+        }
+      },
+      {
+        "state": "  O..    O..  OOOO...OO.........O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 0,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  .OOO....O.....O...O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 1,
+          "dir": 2
+        }
+      },
+      {
+        "state": "  O..    O..  ..OO..........OO..O..  ...    ...  ",
+        "action": {
+          "row": 4,
+          "col": 0,
+          "dir": 1
+        }
+      },
+      {
+        "state": "  O..    O..  ..OO............O.O..  ...    ...  ",
+        "action": {
+          "row": 2,
+          "col": 3,
+          "dir": 3
+        }
+      },
+      {
+        "state": "  O..    O..  .O..............O.O..  ...    ...  ",
+        "action": {
+          "row": 0,
+          "col": 2,
+          "dir": 2
+        }
+      }
+    ]
   }
 ]
